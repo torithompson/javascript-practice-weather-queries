@@ -1,0 +1,15 @@
+<!-- EJS template for advanced queries-->
+<%- include('./partials/header', { title: "Advanced Queries" }); %>
+<% if(day != null) { %>
+    <h2>What is the warmest location on <%= day = day[0].toUpperCase()+day.substring(1) %>?</h2>
+
+    <%= warmestCity %> with a temperature of
+    <%= warmestTemp %>.</h3>
+<% } else { %>
+    <h2>What is the warmest day in <%= warmestCity %>?</h2>
+    <%= warmestDay %> with a temperature of
+    <%= warmestTemp %>.</h3>
+
+
+<% } %>
+<%- include('./partials/footer'); %>

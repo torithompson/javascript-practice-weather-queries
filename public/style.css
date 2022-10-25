@@ -1,0 +1,48 @@
+/*CSS file for weather pages*/
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-top: -0.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left:-.5em;
+    margin-right: -.25em;
+    background-color: white;
+}
+table, td, th {
+    border: 1px solid;
+    font-size: large;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    background-color: white;
+    color: darkorchid;
+}
+#links {
+    width: 100%;
+}
+#links50 {
+    width: 50%;
+}
+nav {
+    background-color: white;
+    margin-top:-2em;
+    padding-bottom: 1em;
+    margin-left: -.5em;
+    margin-right: -0.5em;
+    text-align: center;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: purple;
+    cursor: pointer;
+}

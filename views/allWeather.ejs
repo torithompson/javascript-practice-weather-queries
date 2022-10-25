@@ -1,0 +1,31 @@
+<!-- EJS template for weather queries, inserted into a table for readability-->
+<%- include('./partials/header', { title: "Weather" }); %>
+<% for(let i = 0; i < cities.length; i++) { %>
+<h2><%= cities[i] %></h2>
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Temperature</th>
+        <th>Rainfall</th>
+        <th>Cloudiness</th>
+    </tr>
+    <% avgTemp = 0; %>
+    <% for(let x = 0; x < weekDays.length; x++) { %>
+        <tr>
+        <td><%= weekDays[x] %></td>
+        <td><%= weatherInfo[i][weekDays[x]]["temp"] %>C</td>
+        <% if(average != null) { %>
+            <% avgTemp += weatherInfo[i][weekDays[x]]["temp"] %>
+        <% } %>
+        <td><%= weatherInfo[i][weekDays[x]]["rainfall"] %>mm</td>
+        <td><%= weatherInfo[i][weekDays[x]]["cloudiness"] %></td>
+        </tr>
+    <% } %>
+</table>
+<% if(average != null) { %>
+    <p>Average temp is <%= (avgTemp/weekDays.length).toFixed(0) %></p>
+<% } %>
+
+<% } %>
+
+<%- include('./partials/footer'); %>

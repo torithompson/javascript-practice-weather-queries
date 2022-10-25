@@ -1,0 +1,41 @@
+<!-- EJS template for weather queries, inserted into a table for readability-->
+<%- include('./partials/header', { title: "Weather" }); %>
+<h2><%= city %></h2>
+<% if(sunny == null) { %>
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Temperature</th>
+        <th>Rainfall</th>
+        <th>Cloudiness</th>
+    </tr>
+    <% for(let i = 0; i < weekDay.length; i++) { %>
+        <tr>
+        <td><%= weekDay[i] %></td>
+        <td><%= cityWeather[weekDay[i]]["temp"] %>C</td>
+        <td><%= cityWeather[weekDay[i]]["rainfall"] %>mm</td>
+        <td><%= cityWeather[weekDay[i]]["cloudiness"] %></td>
+        </tr>
+    <% } %>
+</table>
+<% } else { %>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Temperature</th>
+            <th>Rainfall</th>
+            <th>Cloudiness</th>
+        </tr>
+    <% for(let i = 0; i < weekDay.length; i++) { %>
+            <% if(cityWeather[weekDay[i]]["cloudiness"] == "Sunny") { %>
+            <tr>
+            <td><%= weekDay[i] %></td>
+            <td><%= cityWeather[weekDay[i]]["temp"] %>C</td>
+            <td><%= cityWeather[weekDay[i]]["rainfall"] %>mm</td>
+            <td><%= cityWeather[weekDay[i]]["cloudiness"] %></td>
+            </tr>
+            <% } %>
+    <% } %>
+    </table>
+<% } %>
+<%- include('./partials/footer'); %>

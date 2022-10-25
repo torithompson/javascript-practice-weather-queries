@@ -1,0 +1,122 @@
+<!doctype html>
+<!-- Tori Thompson-->
+<!-- Index file for weather page-->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Tori's Weather Page</title>
+    <link rel ="stylesheet" type = "text/css" href = "./style.css"/>
+</head>
+<body>
+    <h1>Tori's Weather Page</h1>
+    <!-- Table to hold weather links for all weather-->
+    <table id = "links50">
+            <tr>
+                <th>Weekly weather for all cities</th>
+            </tr>
+        <tr>
+            <td><a href="http://localhost:3000/weather/all">All Weather</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost:3000/weather/all/average">All Weather with average</a></td>
+        </tr>
+    </table>
+    <br>
+    <!-- Table to hold links for daily weather-->
+    <table id = "links"> 
+        <tr>
+            <th colspan = 8>Weather Data for a single day</th>
+        </tr>
+        <tr>
+            <th>Kingston</th>
+            <td><a href="http://localhost:3000/weather/Kingston/Monday">Kingston Monday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Tuesday">Kingston Tuesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Wednesday">Kingston Wednesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Thursday">Kingston Thursday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Friday">Kingston Friday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Saturday">Kingston Saturday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Kingston/Sunday">Kingston Sunday Weather</a></td>
+        </tr>
+        <tr>
+            <th>Toronto</th>
+            <td><a href="http://localhost:3000/weather/Toronto/Monday">Toronto Monday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Tuesday">Toronto Tuesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Wednesday">Toronto Wednesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Thursday">Toronto Thursday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Friday">Toronto Friday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Saturday">Toronto Saturday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Toronto/Sunday">Toronto Sunday Weather</a></td>
+        </tr>
+        <tr>
+            <th>Frankford</th>
+            <td><a href="http://localhost:3000/weather/Frankford/Monday">Frankford Monday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Tuesday">Frankford Tuesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Wednesday">Frankford Wednesday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Thursday">Frankford Thursday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Friday">Frankford Friday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Saturday">Frankford Saturday Weather</a></td>
+            <td><a href="http://localhost:3000/weather/Frankford/Sunday">Frankford Sunday Weather</a></td>
+        </tr>
+    </table>
+    <br>
+    <!-- Table to hold links for weekly weather-->
+    <table id = "links"> 
+        <tr>
+            <th colspan="1">Weekly weather data for Kingston</th>
+            <th colspan="1">Weekly weather data for Toronto</th>
+            <th colspan="1">Weekly weather data for Frankford</th>
+        </tr>
+        <tr>
+            <td><a href="http://localhost:3000/weather/details/Kingston">Kingston Weather</a></td>
+            <td><a href="http://localhost:3000/weather/details/Toronto">Toronto Weather</a></td>
+            <td><a href="http://localhost:3000/weather/details/Frankford">Frankford Weather</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost:3000/weather/details/Kingston/sunny">Sunny Days in Kingston</a></td>
+            <td><a href="http://localhost:3000/weather/details/Toronto/sunny">Sunny Days in Toronto</a></td>
+            <td><a href="http://localhost:3000/weather/details/Frankford/sunny">Sunny Days in Frankford</a></td>
+        </tr>
+    </table>
+    <br>
+    <!-- Table to hold links for warmest days-->
+    <table id = "links"> 
+        <tr>
+            <th colspan="4">Warmest Days</th>
+        </tr>
+        <tr>
+            <th>Warmest day in each city</th>
+            <td><a href="http://localhost:3000/warmest/Kingston">Kingston's warmest day</a></td>
+            <td><a href="http://localhost:3000/warmest/Toronto">Toronto's warmest day</a></td>
+            <td><a href="http://localhost:3000/warmest/Frankford">Frankford's warmest day</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Monday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Monday">Monday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Tuesday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Tuesday">Tuesday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Wednesday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Wednesday">Wednesday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Thursday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Thursday">Thursday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Friday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Friday">Friday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Saturday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Saturday">Saturday's Warmest Location</a></td>
+        </tr>
+        <tr>
+            <th>Warmest Sunday</th>
+            <td colspan = "3"><a href="http://localhost:3000/location/Sunday">Sunday's Warmest Location</a></td>
+        </tr>
+    </table>
+</body>
+</html>
